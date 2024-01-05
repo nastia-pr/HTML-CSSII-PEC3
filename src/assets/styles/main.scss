@@ -5,13 +5,12 @@
 
  @tailwind base;
  @tailwind components;
+ @tailwind utilities;
 
 
 /**
  * Import variables
  */
-
-@import "variables";
 
 /**
  * Import npm dependencies
@@ -19,8 +18,13 @@
  * see commented examples below
  */
 
+
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
+
+@import url('https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css');
+
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
 
 /**
  * Import layouts
@@ -33,4 +37,4 @@
  * Do NOT include anything else in this file!
  */
 
- @tailwind utilities;
+

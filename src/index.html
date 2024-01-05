@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="utf-8" />
@@ -9,50 +8,331 @@
             type="text/css"
             href="./assets/styles/main.scss"
         />
-        <!-- do not remove this line! -->
-        <title>UOC Boilerplate</title>
+        <link
+            rel="icon"
+            type="image/png"
+            href="../src/assets/images/favicon.png"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Miembros del Club</title>
     </head>
-    <body>
-        <div class="uoc-container">
-            <picture>
-                <source
-                    srcset="./assets/images/logo.png?as=webp&width=350"
-                    type="image/webp"
-                />
-                <img
-                    src="./assets/images/logo.png?width=350"
-                    alt="Universitat Oberta de Catalunya"
-                    class="uoc-logo"
-                />
-            </picture>
-            <h1 class="uoc-title">Hello, UOC!</h1>
-            <p>
-                This is a starter template for the Advanced HTML and CSS Tools
-                courses from the Master's Program in Multimedia Applications and
-                the Master's Program in Web App and Website Development at the
-                Universitat Oberta de Catalunya.
-            </p>
+    <body class="bg-contactBackground">
+        <include src="./views/header.html"></include>
+
+        <div class="text-center mb-11 mt-14 text-3xl md:text-4xl font-medium">
+            <h1>Miembros destacados de la Liga de Tenis</h1>
         </div>
 
-        <div class="space-y-4">
-            <div class="w-96 bg-white shadow rounded">
-                w-96
+        <div class="flex justify-center flex-wrap">
+            <div
+                class="m-w-cards min-h-64 overflow-hidden bg-cardsBackground p-7 rounded-md text-black m-5 shadow-custom flex flex-col"
+            >
+                <img
+                    class="mb-4 max-w-full rounded-md"
+                    src="../src/assets/images/member1.jpg"
+                    alt="cards Image"
+                />
+                <h3 class="text-16 font-semibold mb-2 tracking-wide">
+                    Miembro Uno
+                </h3>
+                <p class="card-text-size overflow-hidden line-clamp-6">
+                    Readymade blackbird spyplane 3 wolf moon activated charcoal.
+                    Sartorial keffiyeh raclette glossier, green juice cupping
+                    offal JOMO celiac twee. Leggings activated charcoal fam,
+                    ascot grailed tumblr ramps thundercats. Tumblr freegan
+                    chicharrones cloud bread intelligentsia twee gentrify
+                    taxidermy shaman sriracha leggings pinterest snackwave
+                    crucifix.
+                </p>
+                <button class="btn-read-more">LEER MÁS</button>
             </div>
-            <div class="w-80 bg-white shadow rounded">
-                w-80
+
+            <div
+                class="m-w-cards min-h-64 overflow-hidden bg-cardsBackground p-7 rounded-md text-black m-5 shadow-custom flex flex-col"
+            >
+                <img
+                    class="mb-4 max-w-full rounded-md"
+                    src="../src/assets/images/member2.jpg"
+                    alt="cards Image"
+                />
+                <h3 class="text-16 font-semibold mb-2 tracking-wide">
+                    Miembro Dos
+                </h3>
+                <p class="card-text-size overflow-hidden line-clamp-6">
+                    Four dollar toast Brooklyn solarpunk knausgaard, pour-over
+                    sartorial woke freegan banjo tote bag franzen wayfarers
+                    hexagon. 8-bit neutra yuccie, tofu ascot you probably
+                    haven't heard of them air plant vegan blog roof party ugh
+                    irony small batch. 3 wolf moon kinfolk kitsch gatekeep,
+                    green juice tilde subway tile narwhal. Cronut tilde
+                    slow-carb, pug poke four dollar toast small batch +1 freegan
+                    poutine affogato wolf gentrify. Sus irony artisan chambray
+                    celiac bitters, godard organic kinfolk. Master cleanse
+                    salvia retro squid gatekeep live-edge before they sold out
+                    vegan chillwave irony meditation pickled austin etsy. Plaid
+                    raclette knausgaard hell of prism jianbing keffiyeh, 8-bit
+                    tbh swag enamel pin four dollar toast disrupt.
+                </p>
+                <button class="btn-read-more">LEER MÁS</button>
             </div>
-            <div class="w-72 bg-white shadow rounded">
-                w-72
+
+            <div
+                class="m-w-cards min-h-64 overflow-hidden bg-cardsBackground p-7 rounded-md text-black m-5 shadow-custom flex flex-col"
+            >
+                <img
+                    class="mb-4 max-w-full rounded-md"
+                    src="../src/assets/images/member3.jpg"
+                    alt="cards Image"
+                />
+                <h3 class="text-16 font-semibold mb-2 tracking-wide">
+                    Miembro Tres
+                </h3>
+                <p class="card-text-size overflow-hidden line-clamp-6">
+                    Chillwave 90's lo-fi kitsch godard lomo. Viral tumblr pok
+                    pok venmo lumbersexual lyft bicycle rights, blue bottle next
+                    level. Food truck blog grailed, taiyaki art party
+                    thundercats kogi wayfarers tattooed tumblr photo booth
+                    distillery. Retro paleo DSA hexagon iPhone readymade flannel
+                    asymmetrical master cleanse authentic tumblr beard. JOMO fit
+                    edison bulb marxism put a bird on it copper mug taxidermy.
+                    Locavore hot chicken health goth gastropub semiotics ugh.
+                    Swag la croix mlkshk man bun glossier air plant gatekeep yes
+                    plz sus austin street art prism truffaut.
+                </p>
+                <button class="btn-read-more">LEER MÁS</button>
             </div>
-            <div class="w-64 bg-white shadow rounded">
-                w-64
+
+            <div
+                class="m-w-cards min-h-64 overflow-hidden bg-cardsBackground p-7 rounded-md text-black m-5 shadow-custom flex flex-col"
+            >
+                <img
+                    class="mb-4 max-w-full rounded-md"
+                    src="../src/assets/images/member4.jpg"
+                    alt="cards Image"
+                />
+                <h3 class="text-16 font-semibold mb-2 tracking-wide">
+                    Miembro Cuatro
+                </h3>
+                <p class="card-text-size overflow-hidden line-clamp-6">
+                    Sriracha disrupt grailed church-key cronut, post-ironic
+                    iceland fixie unicorn adaptogen umami pinterest. Food truck
+                    neutral milk hotel readymade, af drinking vinegar pabst
+                    jianbing cardigan shoreditch intelligentsia enamel pin
+                    kitsch kombucha disrupt. Bruh banh mi tonx solarpunk, VHS
+                    kickstarter thundercats banjo single-origin coffee yr
+                    blackbird spyplane. Cray health goth small batch
+                    sustainable, jianbing gastropub selvage. Ramps semiotics
+                    neutra, 8-bit irony prism fixie microdosing viral artisan
+                    tonx.
+                </p>
+                <button class="btn-read-more">LEER MÁS</button>
             </div>
-            <div class="w-60 bg-white shadow rounded">
-                w-60
+
+            <div
+                class="m-w-cards min-h-64 overflow-hidden bg-cardsBackground p-7 rounded-md text-black m-5 shadow-custom flex flex-col"
+            >
+                <img
+                    class="mb-4 max-w-full rounded-md"
+                    src="../src/assets/images/member5.jpg"
+                    alt="cards Image"
+                />
+                <h3 class="text-16 font-semibold mb-2 tracking-wide">
+                    Miembro Cinco
+                </h3>
+                <p class="card-text-size overflow-hidden line-clamp-6">
+                    I'm baby tattooed fashion axe four dollar toast scenester
+                    enamel pin neutral milk hotel austin, iPhone snackwave
+                    wayfarers vape pok pok cliche praxis shoreditch. Tote bag
+                    shaman heirloom church-key, meh letterpress af twee mukbang
+                    bushwick raclette copper mug. Direct trade marxism messenger
+                    bag, ascot migas shoreditch hot chicken listicle skateboard
+                    everyday carry. Edison bulb waistcoat chambray cold-pressed
+                    art party blackbird spyplane next level +1.
+                </p>
+                <button class="btn-read-more">LEER MÁS</button>
             </div>
-            <div class="w-56 bg-white shadow rounded">
-                w-56
+
+            <div
+                class="m-w-cards min-h-64 overflow-hidden bg-cardsBackground p-7 rounded-md text-black m-5 shadow-custom flex flex-col"
+            >
+                <img
+                    class="mb-4 max-w-full rounded-md"
+                    src="../src/assets/images/member6.jpg"
+                    alt="cards Image"
+                />
+                <h3 class="text-16 font-semibold mb-2 tracking-wide">
+                    Miembro Seis
+                </h3>
+                <p class="card-text-size overflow-hidden line-clamp-6">
+                    Godard narwhal occupy scenester, typewriter brunch bicycle
+                    rights retro health goth unicorn. Kogi tattooed cray, woke
+                    PBR&B glossier farm-to-table cardigan neutral milk hotel
+                    mumblecore gastropub. Woke bicycle rights cloud bread,
+                    forage venmo pabst tilde photo booth master cleanse
+                    sartorial 8-bit tonx flannel. Mlkshk leggings cardigan, yr
+                    pok pok flannel PBR&B pickled tattooed pork belly raw denim.
+                    Vinyl pickled sartorial sus JOMO iPhone stumptown vegan
+                    before they sold out. Retro next level ethical meditation
+                    man bun 90's freegan.
+                </p>
+                <button class="btn-read-more">LEER MÁS</button>
             </div>
+
+            <div
+                class="m-w-cards min-h-64 overflow-hidden bg-cardsBackground p-7 rounded-md text-black m-5 shadow-custom flex flex-col"
+            >
+                <img
+                    class="mb-4 max-w-full rounded-md"
+                    src="../src/assets/images/member7.jpg"
+                    alt="cards Image"
+                />
+                <h3 class="text-16 font-semibold mb-2 tracking-wide">
+                    Miembro Siete
+                </h3>
+                <p class="card-text-size overflow-hidden line-clamp-6">
+                    Mumblecore chartreuse cardigan normcore bushwick vice kale
+                    chips poke edison bulb squid food truck tbh farm-to-table.
+                    Chicharrones JOMO godard umami kogi, cliche taiyaki vape
+                    viral yuccie tattooed direct trade. Ennui kickstarter af
+                    four loko flexitarian meditation salvia locavore. XOXO
+                    mustache coloring book banjo narwhal plaid craft beer
+                    mukbang. Food truck flannel cold-pressed vaporware
+                    dreamcatcher ramps solarpunk lumbersexual scenester bespoke
+                    craft beer. Tbh pabst meggings edison bulb affogato art
+                    party, chicharrones cliche poutine. Enamel pin hammock
+                    pickled selfies tumblr, bicycle rights pour-over actually.
+                </p>
+                <button class="btn-read-more">LEER MÁS</button>
+            </div>
+
+            <div
+                class="m-w-cards min-h-64 overflow-hidden bg-cardsBackground p-7 rounded-md text-black m-5 shadow-custom flex flex-col"
+            >
+                <img
+                    class="mb-4 max-w-full rounded-md"
+                    src="../src/assets/images/member8.jpg"
+                    alt="cards Image"
+                />
+                <h3 class="text-16 font-semibold mb-2 tracking-wide">
+                    Miembro Ocho
+                </h3>
+                <p class="card-text-size overflow-hidden line-clamp-6">
+                    Kale chips pop-up tacos small batch. Street art activated
+                    charcoal slow-carb polaroid fam meh. Retro ramps kale chips
+                    tilde. Everyday carry authentic +1 normcore irony 3 wolf
+                    moon umami yr. Hella bitters franzen plaid occupy. Celiac
+                    cred drinking vinegar enamel pin, letterpress occupy irony.
+                    Kickstarter shaman taxidermy, irony distillery kombucha air
+                    plant listicle fixie.
+                </p>
+                <button class="btn-read-more">LEER MÁS</button>
+            </div>
+
+            <div
+                class="m-w-cards min-h-64 overflow-hidden bg-cardsBackground p-7 rounded-md text-black m-5 shadow-custom flex flex-col"
+            >
+                <img
+                    class="mb-4 max-w-full rounded-md"
+                    src="../src/assets/images/member9.jpg"
+                    alt="cards Image"
+                />
+                <h3 class="text-16 font-semibold mb-2 tracking-wide">
+                    Miembro Nueve
+                </h3>
+                <p class="card-text-size overflow-hidden line-clamp-6">
+                    Lo-fi echo park 3 wolf moon jawn vice organic chicharrones
+                    twee distillery cold-pressed. YOLO cred VHS narwhal
+                    blackbird spyplane cold-pressed. Meditation hot chicken
+                    affogato, kickstarter crucifix actually tousled hoodie
+                    taiyaki squid kale chips wayfarers beard. +1 woke readymade
+                    dreamcatcher portland bitters gluten-free whatever
+                    single-origin coffee iPhone.
+                </p>
+                <button class="btn-read-more">LEER MÁS</button>
+            </div>
+
+            <div
+                class="m-w-cards min-h-64 overflow-hidden bg-cardsBackground p-7 rounded-md text-black m-5 shadow-custom flex flex-col"
+            >
+                <img
+                    class="mb-4 max-w-full rounded-md"
+                    src="../src/assets/images/member10.jpg"
+                    alt="cards Image"
+                />
+                <h3 class="text-16 font-semibold mb-2 tracking-wide">
+                    Miembro Diez
+                </h3>
+                <p class="card-text-size overflow-hidden line-clamp-6">
+                    Deep v put a bird on it narwhal 3 wolf moon freegan glossier
+                    disrupt ramps, flannel tote bag echo park 8-bit adaptogen
+                    fit pitchfork. Tilde leggings tonx, post-ironic synth seitan
+                    tote bag. Paleo vice narwhal wayfarers. Hashtag four dollar
+                    toast pinterest locavore hoodie. Twee yes plz YOLO occupy
+                    bespoke before they sold out fanny pack tote bag green juice
+                    marfa.
+                </p>
+                <button class="btn-read-more">LEER MÁS</button>
+            </div>
+
+            <div
+                class="m-w-cards min-h-64 overflow-hidden bg-cardsBackground p-7 rounded-md text-black m-5 shadow-custom flex flex-col"
+            >
+                <img
+                    class="mb-4 max-w-full rounded-md"
+                    src="../src/assets/images/member11.jpg"
+                    alt="cards Image"
+                />
+                <h3 class="text-16 font-semibold mb-2 tracking-wide">
+                    Miembro Once
+                </h3>
+                <p class="card-text-size overflow-hidden line-clamp-6">
+                    Vinyl pok pok vape, big mood affogato dreamcatcher tilde 3
+                    wolf moon poutine wolf ennui hella. Hexagon semiotics
+                    tattooed meggings 90's gentrify cronut fanny pack, celiac
+                    poke. Waistcoat sriracha kombucha, flannel gentrify
+                    adaptogen pug skateboard man bun marxism cardigan. Cardigan
+                    tote bag before they sold out franzen, DIY scenester shaman
+                    tousled selvage viral gochujang organic. Same la croix
+                    helvetica polaroid ennui church-key taiyaki literally echo
+                    park try-hard. Actually helvetica photo booth poke pork
+                    belly. Leggings street art biodiesel kale chips poke fam
+                    four loko kogi normcore small batch XOXO.
+                </p>
+                <button class="btn-read-more">LEER MÁS</button>
+            </div>
+
+            <div
+                class="m-w-cards min-h-64 overflow-hidden bg-cardsBackground p-7 rounded-md text-black m-5 shadow-custom flex flex-col"
+            >
+                <img
+                    class="mb-4 max-w-full rounded-md"
+                    src="../src/assets/images/member12.jpg"
+                    alt="cards Image"
+                />
+                <h3 class="text-16 font-semibold mb-2 tracking-wide">
+                    Miembro Doce
+                </h3>
+                <p class="card-text-size overflow-hidden line-clamp-6">
+                    Four dollar toast vinyl selfies hexagon green juice.
+                    Heirloom williamsburg knausgaard 8-bit shabby chic semiotics
+                    master cleanse swag copper mug marxism godard hot chicken
+                    tbh +1. Occupy hell of organic, yes plz tumeric subway tile
+                    flannel edison bulb bodega boys jianbing coloring book.
+                    Kickstarter mlkshk 90's four loko church-key humblebrag
+                    butcher. Cray subway tile vibecession, coloring book synth
+                    microdosing franzen cloud bread gatekeep freegan yr.
+                    Waistcoat cray four dollar toast mlkshk put a bird on it
+                    yuccie.
+                </p>
+                <button class="btn-read-more">LEER MÁS</button>
+            </div>
+        </div>
+
+        <include src="./views/pagination.html"></include>
+
         <include src="./views/footer.html"></include>
         <script type="module" src="./assets/scripts/main.js"></script>
         <!-- do not remove this line! -->

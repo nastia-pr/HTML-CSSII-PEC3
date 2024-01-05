@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="../src/assets/images/favicon.png"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Página de contacto</title>
+    </head>
+    <body class="bg-contactBackground">
+        <include src="./views/header.html"></include>
+
+        <div class="container mx-auto max-w-screen-md my-5">
+            <include src="./views/contactform.html"></include>
+            <div class="mt-8 mx-5 md:mx-0">
+                <h1
+                    class="bg-contactMapText max-w-2xl mx-auto mt-24 mb-12 p-3 rounded-2xl text-black text-center text-5xl font-medium"
+                >
+                    Nuestra Ubicación
+                </h1>
+                <div id="map" class="w-full max-w-3xl h-96 mt-4"></div>
+            </div>
+        </div>
+
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <include src="./views/footer.html"></include>
+    </body>
+</html>

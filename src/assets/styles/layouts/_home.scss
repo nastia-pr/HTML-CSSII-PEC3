@@ -1,57 +1,43 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
-}
-
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.uoc-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
-  height: auto;
-
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
+@layer components {
+.socialmedia-hover-effects {
+    @apply transition-all duration-300 ease-in hover:bg-gradient-to-r hover:from-green-400 hover:to-yellow-600 hover:text-transparent hover:bg-clip-text hover:transform hover:scale-150;
   }
+
+.btn-read-more {
+    @apply mt-4 px-4 py-3 border-2 border-white rounded-full text-black font-semibold card-button-size tracking-wider transition duration-500 ease-in-out cursor-pointer hover:text-readMoreHover hover:bg-white focus:outline-none self-end;
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
-
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
-  }
-}
-
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
+  .logo-custom {
+    border-radius: 15px;
+    width: 9.5rem;
+    margin-top: 5px;
+    padding: 25px;
+    margin-bottom: .5em;
+    font-size: 1rem;
+    background: radial-gradient(
+            ellipse at center,
+            #ffeb3b 0%,
+            #ffeb3b 25%,
+            #f2d489 26%,
+            #fbc02d 50%,
+            #21f359 51%,
+            #2196f3 75%,
+            #5298dd 76%,
+            #1e80e9 100%
+          )
+    }
+    
+    .m-w-cards {
+        max-width: 300px;
+    }
+    
+    .card-text-size {
+        font-size: 14px;
+        letter-spacing: .5px;
+    }
+    
+    .card-button-size {
+        font-size: 10px;
+        letter-spacing: 1.2px;
+    }
 }

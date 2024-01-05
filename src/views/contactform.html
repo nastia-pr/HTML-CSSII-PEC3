@@ -1,0 +1,86 @@
+<div class="mx-5 md:mx-0">
+    <h1
+        class="mb-4 bg-contactFormText py-3 px-4 rounded-2xl text-white text-center text-2xl lg:text-4xl font-medium"
+    >
+        Contáctanos
+    </h1>
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="mb-4">
+            <label
+                for="your-name"
+                class="block text-base font-medium text-gray-600"
+                >Nombre</label
+            >
+            <input
+                type="text"
+                id="your-name"
+                name="your-name"
+                class="mt-1 p-2 w-full rounded-md border-gray-300 bg-contactInput"
+                required
+            />
+        </div>
+        <div class="mb-4">
+            <label
+                for="your-surname"
+                class="block text-base font-medium text-gray-600"
+                >Apellidos</label
+            >
+            <input
+                type="text"
+                id="your-surname"
+                name="your-surname"
+                class="mt-1 p-2 w-full rounded-md border-gray-300 bg-contactInput"
+                required
+            />
+        </div>
+        <div class="mb-4">
+            <label
+                for="your-email"
+                class="block text-base font-medium text-gray-600"
+                >Correo Electrónico</label
+            >
+            <input
+                type="email"
+                id="your-email"
+                name="your-email"
+                class="mt-1 p-2 w-full rounded-md border-gray-300 bg-contactInput"
+                required
+            />
+        </div>
+        <div class="mb-4">
+            <label
+                for="your-subject"
+                class="block text-base font-medium text-gray-600"
+                >Asunto</label
+            >
+            <input
+                type="text"
+                id="your-subject"
+                name="your-subject"
+                class="mt-1 p-2 w-full rounded-md border-gray-300 bg-contactInput"
+            />
+        </div>
+        <div class="mb-4 col-span-full">
+            <label
+                for="your-message"
+                class="block text-base font-medium text-gray-600"
+                >Mensaje</label
+            >
+            <textarea
+                id="your-message"
+                name="your-message"
+                rows="5"
+                class="mt-1 p-2 w-full rounded-md border-gray-300 bg-contactInput"
+                required
+            ></textarea>
+        </div>
+        <div class="col-span-full">
+            <button
+                type="submit"
+                class="bg-gray-800 text-white font-bold py-2 px-4 rounded-md w-full md:w-1/2 hover:bg-gray-700 focus:outline-none focus:shadow-outline-gray"
+            >
+                Enviar
+            </button>
+        </div>
+    </form>
+</div>
